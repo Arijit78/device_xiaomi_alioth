@@ -17,6 +17,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 #Audio
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/xiaomi/alioth/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# APN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/etc/apns-conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/apns-conf.xml
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiDoze \
