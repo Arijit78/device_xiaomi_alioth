@@ -16,6 +16,9 @@ TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# Display
+TARGET_SCREEN_DENSITY := 420
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_alioth
 TARGET_RECOVERY_DEVICE_MODULES := libinit_alioth
