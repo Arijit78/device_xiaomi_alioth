@@ -14,6 +14,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Keys
+-include vendor/lineage-priv/keys/keys.mk
+
 #Audio
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/xiaomi/alioth/audio,$(TARGET_COPY_OUT_VENDOR)/etc)
 
